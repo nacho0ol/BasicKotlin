@@ -9,4 +9,10 @@
     <color name="white">#FFFFFFFF</color>
     <color name="darkBlueBG">#FF000B58</color>
     <color name="paleBorder">#FFECEFCA</color>
+    <color name="kuning">#FDEB9E</color>
+    <color name="matcha">#0A400C</color>
+    <color name="item">#222222</color>
+
+
+
 </resources>

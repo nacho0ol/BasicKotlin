@@ -36,7 +36,7 @@ fun album(modifier: Modifier){
     Column(
         modifier = modifier
             .fillMaxSize()
-            .background(Color.Black)
+            .background(color = colorResource(id = R.color.item))
             .padding(all = 60.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ){
@@ -49,7 +49,7 @@ fun album(modifier: Modifier){
                 .clip(CircleShape)
                 .border(
                     width = 5.dp,
-                    color = colorResource(id = R.color.white),
+                    color = colorResource(id = R.color.paleBorder),
                     shape = CircleShape
                 )
         )
@@ -59,8 +59,8 @@ fun album(modifier: Modifier){
         Text(
             text = stringResource(id = R.string.teks1),
             fontSize = 28.sp,
-            fontWeight = FontWeight.Bold,
-            color = colorResource(id = R.color.white)
+            fontWeight = FontWeight.SemiBold,
+            color = colorResource(id = R.color.paleBorder)
         )
 
         Spacer(modifier = Modifier.height(height = 30.dp))
@@ -78,7 +78,7 @@ fun album(modifier: Modifier){
                     .size(150.dp)
                     .border(
                         width = 5.dp,
-                        color = colorResource(id = R.color.white),
+                        color = colorResource(id = R.color.paleBorder),
                         shape = RoundedCornerShape(16.dp)
                     )
                     .clip(RoundedCornerShape(16.dp))
@@ -101,7 +101,7 @@ fun album(modifier: Modifier){
                         .size(120.dp)
                         .border(
                             width = 5.dp,
-                            color = colorResource(id = R.color.white),
+                            color = colorResource(id = R.color.paleBorder),
                             shape = RoundedCornerShape(16.dp)
                         )
                         .clip(RoundedCornerShape(16.dp))
@@ -117,7 +117,7 @@ fun album(modifier: Modifier){
                         .size(120.dp)
                         .border(
                             width = 5.dp,
-                            color = colorResource(id = R.color.white),
+                            color = colorResource(id = R.color.paleBorder),
                             shape = RoundedCornerShape(16.dp)
                         )
                         .clip(RoundedCornerShape(16.dp))
@@ -141,7 +141,7 @@ fun album(modifier: Modifier){
                     .size(90.dp)
                     .border(
                         width = 5.dp,
-                        color = colorResource(id = R.color.white),
+                        color = colorResource(id = R.color.paleBorder),
                         shape = RoundedCornerShape(16.dp)
                     )
                     .clip(RoundedCornerShape(16.dp)))
@@ -157,7 +157,7 @@ fun album(modifier: Modifier){
                         .size(90.dp)
                         .border(
                             width = 5.dp,
-                            color = colorResource(id = R.color.white),
+                            color = colorResource(id = R.color.paleBorder),
                             shape = RoundedCornerShape(16.dp)
                         )
                         .clip(RoundedCornerShape(16.dp)))
@@ -173,7 +173,7 @@ fun album(modifier: Modifier){
                         .size(90.dp)
                         .border(
                             width = 5.dp,
-                            color = colorResource(id = R.color.white),
+                            color = colorResource(id = R.color.paleBorder),
                             shape = RoundedCornerShape(16.dp)
                         )
                         .clip(RoundedCornerShape(16.dp)))
