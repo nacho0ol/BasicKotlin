@@ -31,7 +31,7 @@ fun album(modifier: Modifier){
         modifier = modifier
             .fillMaxSize()
             .background(Color.Black)
-            .padding(all = 20.dp),
+            .padding(all = 60.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ){
         val gambar = painterResource(id = R.drawable.ellipse_47)
@@ -72,24 +72,21 @@ fun album(modifier: Modifier){
             verticalAlignment = Alignment.CenterVertically
         ){
             Box(
-                modifier = Modifier.fillMaxWidth(),
-                contentAlignment = Alignment.Center
+
             ){
                 Image(painterResource(id = R.drawable.nicole), contentDescription = null,
                     modifier = Modifier
-                        .size(40.dp)
+                        .size(120.dp)
                 )
             }
 
-            Spacer(modifier = Modifier.width(width = 10.dp))
+           Spacer(modifier = Modifier.width(width = 30.dp))
 
             Box(
-                modifier = Modifier.fillMaxWidth(),
-                contentAlignment = Alignment.Center
             ){
                 Image(painterResource(id = R.drawable.hitmehardandsoft), contentDescription = null,
                     modifier = Modifier
-                        .size(40.dp)
+                        .size(120.dp)
                 )
             }
 
