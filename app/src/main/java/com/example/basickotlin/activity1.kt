@@ -34,13 +34,18 @@ fun album(modifier: Modifier){
             .padding(all = 60.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ){
-        val gambar = painterResource(id = R.drawable.ellipse_47)
+
         Image(
-            painter = gambar,
+            painter = painterResource(id = R.drawable.ellipse_47),
             contentDescription = null,
             modifier = Modifier
                 .size(120.dp)
                 .clip(CircleShape)
+                .border(
+                    width = 5.dp,
+                    color = colorResource(id = R.color.white),
+                    shape = CircleShape
+                )
         )
 
         Spacer(modifier = Modifier.height(height = 24.dp))
@@ -57,8 +62,8 @@ fun album(modifier: Modifier){
                 modifier = Modifier
                     .size(120.dp)
                     .border(
-                        width = 2.dp,
-                        color = colorResource(id = R.color.black)
+                        width = 5.dp,
+                        color = colorResource(id = R.color.white)
                     )
             )
 
@@ -77,6 +82,10 @@ fun album(modifier: Modifier){
                 Image(painterResource(id = R.drawable.nicole), contentDescription = null,
                     modifier = Modifier
                         .size(120.dp)
+                        .border(
+                            width = 5.dp,
+                            color = colorResource(id = R.color.white)
+                        )
                 )
             }
 
@@ -87,6 +96,10 @@ fun album(modifier: Modifier){
                 Image(painterResource(id = R.drawable.hitmehardandsoft), contentDescription = null,
                     modifier = Modifier
                         .size(120.dp)
+                        .border(
+                            width = 5.dp,
+                            color = colorResource(id = R.color.white)
+                        )
                 )
             }
 
