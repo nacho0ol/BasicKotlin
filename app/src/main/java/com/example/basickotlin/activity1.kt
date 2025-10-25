@@ -56,10 +56,8 @@ fun album(modifier: Modifier){
                     .size(120.dp)
                     .border(
                         width = 2.dp,
-                        color = colorResource(id = R.color.black),
-                        shape = CircleShape
+                        color = colorResource(id = R.color.black)
                     )
-                    .clip(CircleShape)
             )
         }
     }
