@@ -20,8 +20,8 @@ class MainActivity : ComponentActivity() {
         setContent {
             BasicKotlinTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
+                    album(
+
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
