@@ -124,8 +124,6 @@ fun album(modifier: Modifier){
                 )
             }
 
-
-
         }
 
         Spacer(modifier = Modifier.height(height = 30.dp))
