@@ -1,6 +1,7 @@
 package com.example.basickotlin
 
 import android.graphics.Paint
+import android.widget.Space
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
@@ -74,7 +75,7 @@ fun album(modifier: Modifier){
                 painter = painterResource(id = R.drawable.rcpresents),
                 contentDescription = null,
                 modifier = Modifier
-                    .size(120.dp)
+                    .size(150.dp)
                     .border(
                         width = 5.dp,
                         color = colorResource(id = R.color.white),
@@ -85,7 +86,7 @@ fun album(modifier: Modifier){
 
         }
 
-        Spacer(modifier = Modifier.height(height = 24.dp))
+        Spacer(modifier = Modifier.height(height = 30.dp))
 
         Row(
             modifier = Modifier.fillMaxWidth(),
@@ -107,7 +108,7 @@ fun album(modifier: Modifier){
                 )
             }
 
-           Spacer(modifier = Modifier.width(width = 30.dp))
+           Spacer(modifier = Modifier.width(width = 10.dp))
 
             Box(
             ){
@@ -127,7 +128,7 @@ fun album(modifier: Modifier){
 
         }
 
-        Spacer(modifier = Modifier.height(height = 24.dp))
+        Spacer(modifier = Modifier.height(height = 30.dp))
 
         Row(
             modifier = Modifier.fillMaxWidth(),
@@ -139,7 +140,7 @@ fun album(modifier: Modifier){
             ){
                 Image(painter = painterResource(id = R.drawable.dangerouswoman), contentDescription = null,
                 modifier = Modifier
-                    .size(120.dp)
+                    .size(90.dp)
                     .border(
                         width = 5.dp,
                         color = colorResource(id = R.color.white),
@@ -148,12 +149,14 @@ fun album(modifier: Modifier){
                     .clip(RoundedCornerShape(16.dp)))
             }
 
+            Spacer(modifier = Modifier.width(width = 10.dp))
+
             Box(
 
             ){
                 Image(painter = painterResource(id = R.drawable.mitam), contentDescription = null,
                     modifier = Modifier
-                        .size(120.dp)
+                        .size(90.dp)
                         .border(
                             width = 5.dp,
                             color = colorResource(id = R.color.white),
@@ -161,6 +164,23 @@ fun album(modifier: Modifier){
                         )
                         .clip(RoundedCornerShape(16.dp)))
             }
+
+            Spacer(modifier = Modifier.width(width = 10.dp))
+
+            Box(
+
+            ){
+                Image(painter = painterResource(id = R.drawable.ombakbanyu), contentDescription = null,
+                    modifier = Modifier
+                        .size(90.dp)
+                        .border(
+                            width = 5.dp,
+                            color = colorResource(id = R.color.white),
+                            shape = RoundedCornerShape(16.dp)
+                        )
+                        .clip(RoundedCornerShape(16.dp)))
+            }
+
         }
 
     }
