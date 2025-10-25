@@ -127,7 +127,7 @@ fun album(modifier: Modifier){
 
         }
 
-
+        Spacer(modifier = Modifier.height(height = 24.dp))
 
         Row(
             modifier = Modifier.fillMaxWidth(),
@@ -140,6 +140,7 @@ fun album(modifier: Modifier){
                 Image(painter = painterResource(id = R.drawable.dangerouswoman), contentDescription = null,
                 modifier = Modifier
                     .size(120.dp))
+
             }
         }
 
