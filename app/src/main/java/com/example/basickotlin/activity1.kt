@@ -78,6 +78,11 @@ fun album(modifier: Modifier){
 
             Spacer(modifier = Modifier.width(width = 10.dp))
 
+            Image(painterResource(id = R.drawable.hitmehardandsoft), contentDescription = null,
+                modifier = Modifier
+                    .size(40.dp)
+            )
+
 
         }
 
