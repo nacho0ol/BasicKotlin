@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">BasicKotlin</string>
-    <string name="teks1">\Album's</string>
-
+    <string name="teks1">Album\'s</string>
 
 </resources>
