@@ -1,5 +1,6 @@
 package com.example.basickotlin
 
+import android.graphics.Paint
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
@@ -13,6 +14,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -48,9 +50,9 @@ fun album(modifier: Modifier){
             contentAlignment = Alignment.Center,
 
         ){
-            val album1 = painterResource(id = R.drawable.rcpresents)
+
             Image(
-                painter = album1,
+                painter = painterResource(id = R.drawable.rcpresents),
                 contentDescription = null,
                 modifier = Modifier
                     .size(120.dp)
@@ -59,6 +61,25 @@ fun album(modifier: Modifier){
                         color = colorResource(id = R.color.black)
                     )
             )
+
         }
+
+        Spacer(modifier = Modifier.height(height = 24.dp))
+
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.Center,
+            verticalAlignment = Alignment.CenterVertically
+        ){
+            Image(painterResource(id = R.drawable.nicole), contentDescription = null,
+                modifier = Modifier
+                    .size(40.dp)
+            )
+
+            Spacer(modifier = Modifier.width(width = 10.dp))
+
+
+        }
+
     }
 }
