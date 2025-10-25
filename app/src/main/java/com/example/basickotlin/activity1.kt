@@ -146,8 +146,20 @@ fun album(modifier: Modifier){
                         shape = RoundedCornerShape(16.dp)
                     )
                     .clip(RoundedCornerShape(16.dp)))
+            }
 
+            Box(
 
+            ){
+                Image(painter = painterResource(id = R.drawable.mitam), contentDescription = null,
+                    modifier = Modifier
+                        .size(120.dp)
+                        .border(
+                            width = 5.dp,
+                            color = colorResource(id = R.color.white),
+                            shape = RoundedCornerShape(16.dp)
+                        )
+                        .clip(RoundedCornerShape(16.dp)))
             }
         }
 
